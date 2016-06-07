@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugConfig|Win32">
+      <Configuration>DebugConfig</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectName>3DInteractiveSimulation</ProjectName>
+    <ProjectGuid>{A9FFCE09-14F6-4F31-B50F-BBD70F64B4E9}</ProjectGuid>
+    <RootNamespace>3DInteractiveSimulation</RootNamespace>
+    <Keyword>ManagedCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugConfig|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CLRSupport>false</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>false</CLRSupport>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugConfig|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugConfig|Win32'">$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugConfig|Win32'">$(Configuration)\</IntDir>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='DebugConfig|Win32'">$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(PHYSX_DIR)\SDKs\Physics\include\;$(PHYSX_DIR)\SDKs\Foundation\include\;$(PHYSX_DIR)\SDKs\Cooking\include\;$(PHYSX_DIR)\SDKs\PhysXLoader\include\;$(PHYSX_DIR)\SDKs\NxCharacter\include;$(OGRE_HOME)\boost_1_44;$(OGRE_HOME)\include;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\include\OGRE\WIN32;$(OGRE_HOME)\include\OGRE\Terrain;$(OGRE_HOME)\include\OGRE\Threading;$(OGRE_HOME)\include\OIS;$(CRITTER_DIR)\sdk;$(NXOGRE_DIR)\sdk;%(AdditionalIncludeDirectories);</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='DebugConfig|Win32'">$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(OGRE_HOME)\boost_1_44\lib;$(OGRE_HOME)\lib\debug;$(OGRE_HOME)\lib\release;$(NXOGRE_DIR)\sdk;$(CRITTER_DIR)\sdk;</LibraryPath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(VCInstallDir)include;$(VCInstallDir)atlmfc\include;$(WindowsSdkDir)include;$(FrameworkSDKDir)\include;$(PHYSX_DIR)\SDKs\Physics\include\;$(PHYSX_DIR)\SDKs\Foundation\include\;$(PHYSX_DIR)\SDKs\Cooking\include\;$(PHYSX_DIR)\SDKs\PhysXLoader\include\;$(PHYSX_DIR)\SDKs\NxCharacter\include;$(OGRE_HOME)\boost_1_44;$(OGRE_HOME)\include;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\include\OGRE\WIN32;$(OGRE_HOME)\include\OGRE\Terrain;$(OGRE_HOME)\include\OGRE\Threading;$(OGRE_HOME)\include\OIS;$(CRITTER_DIR)\sdk;$(NXOGRE_DIR)\sdk;%(AdditionalIncludeDirectories);</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(VCInstallDir)lib;$(VCInstallDir)atlmfc\lib;$(WindowsSdkDir)lib;$(FrameworkSDKDir)\lib;$(OGRE_HOME)\boost_1_44\lib;$(OGRE_HOME)\lib\debug;$(OGRE_HOME)\lib\release;$(NXOGRE_DIR)\sdk;$(CRITTER_DIR)\sdk;</LibraryPath>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='DebugConfig|Win32'">true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;_NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level1</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <ErrorReporting>None</ErrorReporting>
+      <AdditionalIncludeDirectories>$(NXOGRE_DIR)\sdk;$(OGRE_HOME)\include;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\include\OIS;$(PHYSX_DIR)\SDKs\Physics\include\;$(PHYSX_DIR)\SDKs\Foundation\include\;$(PHYSX_DIR)\SDKs\Cooking\include\;$(PHYSX_DIR)\SDKs\PhysXLoader\include\;$(PHYSX_DIR)\SDKs\NxCharacter\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>OgreMain.lib;OIS.lib;NxOgre.lib;CritterStatic.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention>
+      </DataExecutionPrevention>
+      <TargetMachine>MachineX86</TargetMachine>
+      <OutputFile>$(Configuration)\$(ProjectName).exe</OutputFile>
+      <LinkErrorReporting>NoErrorReport</LinkErrorReporting>
+    </Link>
+    <Manifest>
+      <OutputManifestFile>$(IntDir)$(TargetName)$(TargetExt).embed.manifest</OutputManifestFile>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugConfig|Win32'">
+    <ClCompile>
+      <PreprocessorDefinitions>_SCL_SECURE_NO_WARNINGS;WIN32;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <ObjectFileName>$(SolutionDir)$(Configuration)\</ObjectFileName>
+      <ProgramDataBaseFileName>$(SolutionDir)$(Configuration)\vc90.pdb</ProgramDataBaseFileName>
+      <XMLDocumentationFileName>$(SolutionDir)$(Configuration)\</XMLDocumentationFileName>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(NXOGRE_DIR)\sdk;$(OGRE_HOME)\include;$(OGRE_HOME)\include\OGRE;$(OGRE_HOME)\include\OIS;$(PHYSX_DIR)\SDKs\Physics\include\;$(PHYSX_DIR)\SDKs\Foundation\include\;$(PHYSX_DIR)\SDKs\Cooking\include\;$(PHYSX_DIR)\SDKs\PhysXLoader\include\;$(PHYSX_DIR)\SDKs\NxCharacter\include;%(AdditionalIncludeDirectories);</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <CompileAs>Default</CompileAs>
+      <ErrorReporting>None</ErrorReporting>
+      <Optimization>Disabled</Optimization>
+      <ExceptionHandling>Async</ExceptionHandling>
+    </ClCompile>
+    <Link>
+      <RegisterOutput>false</RegisterOutput>
+      <AdditionalDependencies>OgreMain_d.lib;OIS_d.lib;NxOgreDebug.lib;CritterDebugStatic.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ShowProgress>NotSet</ShowProgress>
+      <OutputFile>$(Configuration)\$(ProjectName).exe</OutputFile>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AssemblyDebug>false</AssemblyDebug>
+      <ProgramDatabaseFile>$(TargetDir)$(TargetName).pdb</ProgramDatabaseFile>
+      <GenerateMapFile>true</GenerateMapFile>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>false</OptimizeReferences>
+      <EnableCOMDATFolding>false</EnableCOMDATFolding>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <AllowIsolation>false</AllowIsolation>
+      <EnableUAC>false</EnableUAC>
+      <LinkErrorReporting>NoErrorReport</LinkErrorReporting>
+    </Link>
+    <Manifest>
+      <OutputManifestFile>$(IntDir)$(TargetName)$(TargetExt).embed.manifest</OutputManifestFile>
+    </Manifest>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Data">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Xml">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="source\ClientBase.h" />
+    <ClInclude Include="source\ClientBullet.h" />
+    <ClInclude Include="source\ClientCom.h" />
+    <ClInclude Include="source\ClientConfig.h" />
+    <ClInclude Include="source\ClientCore.h" />
+    <ClInclude Include="source\ClientHelper.h" />
+    <ClInclude Include="source\ClientInput.h" />
+    <ClInclude Include="source\ClientInputGame.h" />
+    <ClInclude Include="source\ClientInputManager.h" />
+    <ClInclude Include="source\ClientInputUI.h" />
+    <ClInclude Include="source\ClientInterface.h" />
+    <ClInclude Include="source\ClientInterfaceGame.h" />
+    <ClInclude Include="source\ClientInterfaceUI.h" />
+    <ClInclude Include="source\ClientLevel.h" />
+    <ClInclude Include="source\ClientLevel1Data.h" />
+    <ClInclude Include="source\ClientListener.h" />
+    <ClInclude Include="source\ClientMain.h" />
+    <ClInclude Include="source\ClientSaladin.h" />
+    <ClInclude Include="source\ClientSquad.h" />
+    <ClInclude Include="source\ClientSteering.h" />
+    <ClInclude Include="source\ClientStrategie.h" />
+    <ClInclude Include="source\ClientUnit.h" />
+    <ClInclude Include="source\ClientUnitLeader.h" />
+    <ClInclude Include="source\Common.h" />
+    <ClInclude Include="source\CommonBase.h" />
+    <ClInclude Include="source\CommonHelper.h" />
+    <ClInclude Include="source\ServerBase.h" />
+    <ClInclude Include="source\ServerCom.h" />
+    <ClInclude Include="source\ServerCore.h" />
+    <ClInclude Include="source\ServerMain.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="source\ClientBullet.cpp" />
+    <ClCompile Include="source\ClientCom.cpp" />
+    <ClCompile Include="source\ClientConfig.cpp" />
+    <ClCompile Include="source\ClientCore.cpp" />
+    <ClCompile Include="source\ClientHelper.cpp" />
+    <ClCompile Include="source\ClientInput.cpp" />
+    <ClCompile Include="source\ClientInputGame.cpp" />
+    <ClCompile Include="source\ClientInputManager.cpp" />
+    <ClCompile Include="source\ClientInputUI.cpp" />
+    <ClCompile Include="source\ClientInterface.cpp" />
+    <ClCompile Include="source\ClientInterfaceGame.cpp" />
+    <ClCompile Include="source\ClientInterfaceUI.cpp" />
+    <ClCompile Include="source\ClientLevel.cpp" />
+    <ClCompile Include="source\ClientListener.cpp" />
+    <ClCompile Include="source\ClientMain.cpp" />
+    <ClCompile Include="source\ClientSaladin.cpp" />
+    <ClCompile Include="source\ClientSquad.cpp" />
+    <ClCompile Include="source\ClientSteering.cpp" />
+    <ClCompile Include="source\ClientStrategie.cpp" />
+    <ClCompile Include="source\ClientUnit.cpp" />
+    <ClCompile Include="source\ClientUnitLeader.cpp" />
+    <ClCompile Include="source\CommonHelper.cpp" />
+    <ClCompile Include="source\ServerCom.cpp" />
+    <ClCompile Include="source\ServerCore.cpp" />
+    <ClCompile Include="source\ServerMain.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

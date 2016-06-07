@@ -1,0 +1,108 @@
+material Wheel
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture Saladin_Metal.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op modulate
+			}
+		}
+		pass
+		{
+			ambient 0.0 0.0 0.0
+			diffuse 0.0 0.0 0.0
+			specular 0.200000 0.200000 0.200000 1.000000 45.000000
+			scene_blend add
+		}
+	}
+}
+material Tire_Thread
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture Tire_Map.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op modulate
+			}
+		}
+		pass
+		{
+			ambient 0.0 0.0 0.0
+			diffuse 0.0 0.0 0.0
+			specular 0.200000 0.200000 0.200000 1.000000 45.000000
+			scene_blend add
+		}
+	}
+}
+material Bolts_and_Nuts
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture Saladin_Metal.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op modulate
+			}
+		}
+		pass
+		{
+			ambient 0.0 0.0 0.0
+			diffuse 0.0 0.0 0.0
+			specular 0.200000 0.200000 0.200000 1.000000 45.000000
+			scene_blend add
+		}
+	}
+}
+material Tire_Material2
+{
+	receive_shadows on
+	technique
+	{
+		pass
+		{
+			ambient 0.500000 0.500000 0.500000 1.000000
+			diffuse 0.800000 0.800000 0.800000 1.000000
+			emissive 0.000000 0.000000 0.000000 1.000000
+			texture_unit
+			{
+				texture Tire_Map.jpg
+				tex_address_mode wrap
+				filtering trilinear
+				colour_op modulate
+			}
+		}
+		pass
+		{
+			ambient 0.0 0.0 0.0
+			diffuse 0.0 0.0 0.0
+			specular 0.200000 0.200000 0.200000 1.000000 45.000000
+			scene_blend add
+		}
+	}
+}
